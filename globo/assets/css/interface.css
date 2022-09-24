@@ -1,0 +1,50 @@
+#box{
+  background: hsl(0deg 0% 13% / 7%);
+  width: 50%;
+  padding: 12px;
+  border-radius: 15px;
+  font-weight: 800;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+input[type=text]{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+ input[type=submit], [type=button] {
+  background-color: #756c5f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover, [type=button]:hover {
+  background-color: #8b8173;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th, td{
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+
