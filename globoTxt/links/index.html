@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" type ="text/css" href="../assets/css/interface.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	
+
+	<body>
+
+		<h1>Formulário de links</h1>
+		<button type='button' id="inserir" name="inserir"> Inserir Link</button>
+		<button type='button' id="listar" name="listar"> Listar Links</button>
+		<button type='button' id="remover" name="remover"> Remover Link</button>
+		<a href="http://localhost/globoTxt/screenshots/" id="open_screenshots" target="_blank"><button type="button">Abrir Screenshots</button></a>
+		<br><br>
+
+		<div id="box" style= "display: none;">
+				
+			<div id="dado_link"  style= "display: none;">
+				Link: <input type="text" id="link" size="400" maxlength="400" placeholder="Insira o link aqui" color: black; value=""> <br><br>
+				<input id="botao_submit" type="submit" value="">
+			</div>
+
+
+			<div id='tabela'  style= "display: none;">
+				
+			</div>
+		</div>
+	</body>
+	<div id="paginaAtual">
+		<object type="text/html" data="" id="paginaLink"></object>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="module" src="../assets/js/main.js"></script>
+</html>
+
+<script>
+</script>
+

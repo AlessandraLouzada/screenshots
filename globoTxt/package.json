@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "chromedriver": "^105.0.1",
+    "phantom-workers": "^0.6.0",
+    "selenium-webdriver": "^4.4.0"
+  }
+}
