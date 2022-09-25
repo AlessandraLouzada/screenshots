@@ -84,5 +84,4 @@ require("chromedriver");
     }, 90000);
     
 
-    //await driver.quit();
 })();
