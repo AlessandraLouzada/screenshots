@@ -25,7 +25,7 @@ function exibir(){
             
             var link_compare = link.replace("://", "+");
             link_compare = link_compare.replace("/", "_");
-
+            var nome_img = [];
             var url_link = "http://localhost/globo/screenshots/"+link_compare;
             $.ajax({
                 url: url_link,
@@ -33,15 +33,19 @@ function exibir(){
                     document.getElementById('box').append("Prints do link cadastrado: "+ link);
                     $(data).find("td > a").each(function(){
                         if($(this).attr("href") != '/globo/screenshots/'){
-                            var src_img = url_link+'/'+$(this).attr("href");
-                            var data = $(this).attr("href").replace("%20", " às ");
-                            var html = '<br><br><img src="'+ src_img+'" width="500" height="600"><br>'
-                            +'<label>Print tirado na data: '+data.replace(".png", "")+'</label><br><br>';
-                            $("#box").append(html);
+                            nome_img.push($(this).attr("href"));
                         }
                     });
+                    nome_img.reverse()
+                    nome_img.forEach(function(nome){
+                        var src_img = url_link+'/'+nome;
+                        var data = nome.replace("%20", " às ");
+                        var html = '<br><br><img src="'+ src_img+'" width="500" height="600"><br>'
+                        +'<label>Print tirado na data: '+data.replace(".png", "")+'</label><br><br>';
+                        $("#box").append(html);
+                    });
                 }
-                });
+            });
         });
 
     }
